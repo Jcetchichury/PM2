@@ -1,3 +1,75 @@
-body {
-    text-align: center;
+
+form{
+    width: 40vw;
+    height: 180vh;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding: 2vh;
+    border: 0.25vh solid yellow;
+    border-radius: 5vh;
+}
+
+p{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+#eyedois, #eyeum{
+    margin-right: 2vw;
+    margin-left: 1vw;
+}
+
+
+#emailError, #erroSenhaDois, #erroSenha, #eyedois, #eyeum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#emailError, #erroSenhaDois, #erroSenha{
+    font-size: 1.5vh;
+}
+
+label{
+    font-size: 2vh;
+}
+
+input{
+    font-size: 2vh;
+    height: 4vh;
+    border: none;
+    border-bottom: 0.25vh solid black;
+    background-color: whitesmoke;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+#submitButton{
+    background-color: yellow;
+    border: none;
+    border-radius: 5vh;
+    width: 5vw;
+    height: 5vh;
+    color: black;
+}
+
+.eyeError{
+    display: flex;
+    align-items: center;
+}
+
+.emailError{
+    display: flex;
+    align-items: center;
+    height: 4vh;
+}
+
+#emailError{
+    padding-left: 1vw;
 }
