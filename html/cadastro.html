@@ -36,25 +36,95 @@
         </nav>
     </header>
 
-    <main>
-        <h1 class="text-center fonte-titulo pt-5">Título da página</h1>
+    <form>
+        <p>Dados Pessoais</p>
 
-        <p class="text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut placeat officiis cupiditate? Aliquid repellendus ducimus cumque, delectus, ullam est voluptatum distinctio a assumenda tenetur nulla similique, aut officia id quo !</p>
+        <label>Nome Completo</label><br>
+        <input name="nome" type="text" id="nome" size="60" placeholder="Digite seu nome completo" required><br></br>
 
-        <h2 class="text-center pt-5">Outro título</h2>
+        <label>RG</label><br>
+        <input name="rg" type="text" id="rg" size="40" minlength="9" maxlength="9" placeholder="Digite seu RG"
+            required><br></br>
 
-    </main>
+        <label>Data de Nascimento</label><br>
+        <input name="datanasc" type="date" id="datanasc" size="40" required><br></br>
 
-    <footer class="bg-dark text-light fixed-bottom">
-        <div class="text-center" style="background-color: #333; padding: 20px;" >
-          &copy 2022 Copyright: Uncomplicated Code - Criado para fins educativos
+        <p>Login</p>
+
+        <label>E-mail</label><br>
+
+        <div class="emailError">
+            <input name="email" type="email" id="email" size="40" placeholder="Digite o seu e-mail favorito" required>
+            <p id="emailError"></p>
         </div>
-      </footer>
+
+        <br>
+
+        <label>Senha</label><br>
+
+        <div class="eyeError">
+            <input name="senha" type="password" class="password" id="senha" value="" minlength="8" maxlength="8"
+                size="20" placeholder="Senha com 8 dígitos" required>
+            <span class="lnr lnr-eye" id="eyeum"></span>
+            <p id="erroSenha"></p>
+        </div>
+
+        <br>
+
+        <label>Confirmação de Senha</label><br>
+
+        <div class="eyeError">
+            <input name="confirmasenha" type="password" class="password" id="confirmasenha" value="" minlength="8"
+                maxlength="8" size="20" placeholder="Confirme a senha" required>
+            <span class="lnr lnr-eye" id="eyedois"></span>
+            <p id="erroSenhaDois"></p>
+        </div>
+
+        <br>
+        <p>Endereço</p>
+
+        <label>Cep</label><br>
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" required><br></br>
+
+        <label>Rua</label><br>
+        <input name="rua" type="text" id="rua" size="60" required><br></br>
+
+        <label>Número</label><br>
+        <input name="uf" type="text" id="numero" size="2" required><br></br>
+
+        <label>Complemento</label><br>
+        <input name="uf" type="text" id="complemento" size="40" required><br></br>
+
+        <label>Bairro</label><br>
+        <input name="bairro" type="text" id="bairro" size="40" required><br></br>
+
+        <label>Cidade</label><br>
+        <input name="cidade" type="text" id="cidade" size="40" required><br></br>
+
+        <label>Estado</label><br>
+        <input name="uf" type="text" id="uf" size="2" required><br></br>
+
+        <div class="button">
+            <input name="submit" type="submit" id="submitButton">
+        </div>
+    </form>
+
+    <footer class="bg-dark text-light">
+        <div class="text-center" style="background-color: #333; padding: 20px;">
+            &copy 2022 Copyright: Uncomplicated Code - Criado para fins educativos
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascript/formulario.js"></script>
+    <script src="formulario2.js"></script>
+
 </body>
 
 </html>
