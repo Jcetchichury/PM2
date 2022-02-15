@@ -1,3 +1,9 @@
+let cepValid = false
+
+let mensError = document.querySelector('#mensError');
+let mensCerto = document.querySelector('#mensCerto');
+
+
 //Validar e-mail
 $("#email").ready(function(){
     
@@ -132,14 +138,15 @@ $(document).ready(function() {
                     try {
                         
                         if ("erro" in dados){
+                            cepValid = false
                             throw new Error ("Digite um CEP válido")
-
                         } else {
 
                             $("#rua").val(dados.logradouro);
                             $("#bairro").val(dados.bairro);
                             $("#cidade").val(dados.localidade);
                             $("#uf").val(dados.uf);
+                            cepValid = true
                         }
                     } 
                     catch (error) { 
@@ -152,19 +159,39 @@ $(document).ready(function() {
 });
 
 
-
-
 $("#submitButton").click(function(event){
     event.preventDefault();
-    
+
     const senha = $("#senha").val();
     const confirmaSenha = $("#confirmasenha").val();
     const email = $("#emailError");
 
-    if(senha.length == 8 && confirmaSenha == senha && email.css('display') == 'none'){
-        alert ("Seu cadastro foi realizado. Verifique o seu e-mail cadastrado para confirmar sua inscrição.")
+    if(senha.length == 8 && confirmaSenha == senha && email.css('display') == 'none' && cepValid){
+        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+
+        listaUser.push({
+            nomeCad: $("#nome").val(),
+            dataCad: $("#datanasc").val(),
+            emailCad: $("#email").val(),
+            senhaCad: $("#senha").val(),
+            cepCad: $("#cap").val(),
+        })
+        
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        
+        mensCerto.setAttribute('style', 'display: block')
+        mensCerto.innerHTML = '<strong>cadastrando usuario...</strong>'
+        mensError.setAttribute ('style', 'display: none')
+        mensError.innerHTML = ''
+
+        setTimeout(()=>{
+            window.location.href = './logIn.html'
+        }, 2500)    
     } else {
-        alert ("Preencha todos os dados devidamente.")
+        mensError.setAttribute ('style', 'display: block')
+        mensError.innerHTML = '<strong>Preencha todos os dados devidamente.</strong>'
+        mensCerto.setAttribute ('style', 'display: none')
+        mensCerto.innerHTML = ''
     }
 
 });
