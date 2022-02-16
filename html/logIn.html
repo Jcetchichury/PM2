@@ -35,26 +35,37 @@
             </div>
         </nav>
     </header>
+    <form id="forma">
+        <div id="form">
 
-    <main>
-        <h1 class="text-center fonte-titulo pt-5">Título da página</h1>
+            <div id="mensError"></div>
+            <div id="mensCerto"></div>
 
-        <p class="text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut placeat officiis cupiditate? Aliquid repellendus ducimus cumque, delectus, ullam est voluptatum distinctio a assumenda tenetur nulla similique, aut officia id quo !</p>
+            <label for="email">E-mail</label><br>
+            <input type="text" id="email" placeholder="digite seu email"><br>
 
-        <h2 class="text-center pt-5">Outro título</h2>
+            <p></p>
 
-    </main>
+            <label>Senha</label><br>
+            <div class="eyeError"><br>
+                <input name="senha" type="password" class="password" id="senha" value=""  minlength="8" maxlength="8" size="20" placeholder="digite sua senha" required>
+                <span class="lnr lnr-eye" id="eyeum"></span>
+            </div>  
 
-    <footer class="bg-dark text-light fixed-bottom">
+            <p></p>
+            
+            <input name="submit" type="button" id="submitButton" value="Login">
+
+        </div>
+    </form>
+    <footer class="bg-dark text-light">
         <div class="text-center" style="background-color: #333; padding: 20px;" >
           &copy 2022 Copyright: Uncomplicated Code - Criado para fins educativos
         </div>
-      </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../javascript/script.js"></script>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./../javascript/login.js"></script>
 </body>
 
 </html>
