@@ -1,7 +1,6 @@
 
-form{
+#form{
     width: 40vw;
-    height: 180vh;
     background-color: whitesmoke;
     margin: auto;
     margin-top: 5vh;
@@ -72,4 +71,22 @@ input{
 
 #emailError{
     padding-left: 1vw;
+}
+
+#mensError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+}
+
+#mensCerto {
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
 }

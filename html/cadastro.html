@@ -35,77 +35,78 @@
             </div>
         </nav>
     </header>
-
     <form>
-        <p>Dados Pessoais</p>
+        <div id="form">
+            <p>Dados Pessoais</p>
 
-        <label>Nome Completo</label><br>
-        <input name="nome" type="text" id="nome" size="60" placeholder="Digite seu nome completo" required><br></br>
+            <label>Nome Completo</label><br>
+            <input name="nome" type="text" id="nome" size="60" placeholder="Digite seu nome completo" required><br></br>
+                
+            <label>RG</label><br>
+            <input name="rg" type="text" id="rg" size="40" minlength="9" maxlength="9" placeholder="Digite seu RG" required><br></br>
 
-        <label>RG</label><br>
-        <input name="rg" type="text" id="rg" size="40" minlength="9" maxlength="9" placeholder="Digite seu RG"
-            required><br></br>
+            <label>Data de Nascimento</label><br>
+            <input name="datanasc" type="date" id="datanasc" size="40" required><br></br>
+            
+            <p>Login</p>
+            
+            <label>E-mail</label><br>
 
-        <label>Data de Nascimento</label><br>
-        <input name="datanasc" type="date" id="datanasc" size="40" required><br></br>
+            <div class="emailError">
+                <input name="email" type="email" id="email" size="40" placeholder="Digite o seu e-mail favorito" required>
+                <p id="emailError"></p>
+            </div>
 
-        <p>Login</p>
+            <br>
 
-        <label>E-mail</label><br>
+            <label>Senha</label><br>
+            
+            <div class="eyeError">
+                <input name="senha" type="password" class="password" id="senha" value=""  minlength="8" maxlength="8" size="20" placeholder="Senha com 8 dígitos" required>
+                <span class="lnr lnr-eye" id="eyeum"></span>
+                <p id="erroSenha"></p>
+            </div>
 
-        <div class="emailError">
-            <input name="email" type="email" id="email" size="40" placeholder="Digite o seu e-mail favorito" required>
-            <p id="emailError"></p>
-        </div>
-
-        <br>
-
-        <label>Senha</label><br>
-
-        <div class="eyeError">
-            <input name="senha" type="password" class="password" id="senha" value="" minlength="8" maxlength="8"
-                size="20" placeholder="Senha com 8 dígitos" required>
-            <span class="lnr lnr-eye" id="eyeum"></span>
-            <p id="erroSenha"></p>
-        </div>
-
-        <br>
-
-        <label>Confirmação de Senha</label><br>
-
-        <div class="eyeError">
-            <input name="confirmasenha" type="password" class="password" id="confirmasenha" value="" minlength="8"
-                maxlength="8" size="20" placeholder="Confirme a senha" required>
-            <span class="lnr lnr-eye" id="eyedois"></span>
-            <p id="erroSenhaDois"></p>
-        </div>
-
-        <br>
-        <p>Endereço</p>
-
-        <label>Cep</label><br>
-        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" required><br></br>
-
-        <label>Rua</label><br>
-        <input name="rua" type="text" id="rua" size="60" required><br></br>
-
-        <label>Número</label><br>
-        <input name="uf" type="text" id="numero" size="2" required><br></br>
-
-        <label>Complemento</label><br>
-        <input name="uf" type="text" id="complemento" size="40" required><br></br>
-
-        <label>Bairro</label><br>
-        <input name="bairro" type="text" id="bairro" size="40" required><br></br>
-
-        <label>Cidade</label><br>
-        <input name="cidade" type="text" id="cidade" size="40" required><br></br>
-
-        <label>Estado</label><br>
-        <input name="uf" type="text" id="uf" size="2" required><br></br>
-
-        <div class="button">
-            <input name="submit" type="submit" id="submitButton">
+            <br>
+            
+            <label>Confirmação de Senha</label><br>
+            
+            <div class="eyeError">
+                <input name="confirmasenha" type="password" class="password" id="confirmasenha" value="" minlength="8" maxlength="8" size="20" placeholder="Confirme a senha" required>
+                <span class="lnr lnr-eye" id="eyedois"></span>
+                <p id="erroSenhaDois"></p>
+            </div>
+            
+            <br>
+            <p>Endereço</p>
+        
+            <label>Cep</label><br>
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" required><br></br>
+            
+            <label>Rua</label><br>
+            <input name="rua" type="text" id="rua" size="60" required><br></br>
+            
+            <label>Número</label><br>
+            <input name="uf" type="text" id="numero" size="2" required><br></br>
+            
+            <label>Complemento</label><br>
+            <input name="uf" type="text" id="complemento" size="40" required><br></br>
+            
+            <label>Bairro</label><br>
+            <input name="bairro" type="text" id="bairro" size="40" required><br></br>
+        
+            <label>Cidade</label><br>
+            <input name="cidade" type="text" id="cidade" size="40" required><br></br>
+        
+            <label>Estado</label><br>
+            <input name="uf" type="text" id="uf" size="2" required><br></br>
+           
+            <div id="mensError"></div><br>
+            <div id="mensCerto"></div>
+        
+            <div class="button">
+                <input name="submit" type="submit" id="submitButton"> 
+            </div>
         </div>
     </form>
 
@@ -122,9 +123,7 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../javascript/formulario.js"></script>
-    <script src="formulario2.js"></script>
-
+    <script src="../javascript/formulario.js"></script>    
 </body>
 
 </html>
