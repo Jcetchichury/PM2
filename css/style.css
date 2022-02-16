@@ -113,7 +113,6 @@ input{
     background-color: yellow;
     border: none;
     border-radius: 5vh;
-    width: 5vw;
     height: 5vh;
     color: black;
 }
@@ -122,7 +121,14 @@ input{
     background-color: yellow;
     border: none;
     border-radius: 5vh;
-    width: 10vw;
+    height: 5vh;
+    color: black;
+}
+
+#submitRec{
+    background-color: yellow;
+    border: none;
+    border-radius: 5vh;
     height: 5vh;
     color: black;
 }
@@ -157,5 +163,9 @@ input{
     background-color: #bbffbe;
     border-radius: 4px;
     padding: 10px;
+    display: none;
+}
+
+#recuperacao{
     display: none;
 }

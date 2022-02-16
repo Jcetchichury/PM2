@@ -35,26 +35,48 @@
             </div>
         </nav>
     </header>
+    <form>
+        <div id="form">
+            
+            <div id="mensError"></div>
+            <div id="mensCerto"></div>
 
-    <main>
-        <h1 class="text-center fonte-titulo pt-5">Título da página</h1>
+            <div id="confirmacao">
+                <label>nome</label><br>
+                <input type="text" name="nome" id="nomeRec"><br>
 
-        <p class="text-center text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut placeat officiis cupiditate? Aliquid repellendus ducimus cumque, delectus, ullam est voluptatum distinctio a assumenda tenetur nulla similique, aut officia id quo !</p>
+                <label>email</label><br>
+                <input type="text" name="email" id="emailRec"><br>
+                <p></p>
+                <input name="submit" type="button" id="submitButton" value="Confirmação">
+            </div>
+            <div id="recuperacao">
+                <label>senha</label><br>
+                <div class="eyeError"><br>
+                    <input name="senha" type="password" class="password" id="senhaRec" value=""  minlength="8" maxlength="8" size="20" placeholder="digite sua senha" required>
+                    <span class="lnr lnr-eye" id="eyeum"></span>
+                </div>
 
-        <h2 class="text-center pt-5">Outro título</h2>
-
-    </main>
+                <label>confirme senha</label><br>
+                <div class="eyeError"><br>
+                    <input name="senha" type="password" class="password" id="confirmSenha" value=""  minlength="8" maxlength="8" size="20" placeholder="digite sua senha" required>
+                    <span class="lnr lnr-eye" id="eyedois"></span>
+                </div>
+                <p></p>
+                <input name="submit" type="button" id="submitRec" value="Trocar senha">
+            </div>
+        </div>
+    </form>
 
     <footer class="bg-dark text-light fixed-bottom">
         <div class="text-center" style="background-color: #333; padding: 20px;" >
           &copy 2022 Copyright: Uncomplicated Code - Criado para fins educativos
         </div>
-      </footer>
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <script src="../javascript/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascript/recuperacaoSenha.js"></script>
 </body>
 
 </html>
