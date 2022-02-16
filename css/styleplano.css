@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+body{
+    background: url("../img/backservice3.gif");
+    background-size:cover;
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+      
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.sub-title {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.sobre-title {
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10% 0 0;
+}
+
+.sobre {
+    margin: 25px auto;
+    padding: 2%;
+    height: 50%;
+    width: 70%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #000000f1 ;
+    font-family: 'Share Tech', sans-serif;
+    font-size: 30px;
+    border-radius: 50px ;
+    border: 5px solid rgba(255, 238, 0, 0.384);
+}
+
+/* OPÇÕES DE PLANOS/ASSINATURAS */
+.escp {
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    margin: 10% 0 5%;
+}
+
+.planos {
+    width:940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.planos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.planos li:hover {
+    border-color: #C78C19;
+}
+
+.planos li:active {
+    border-color: #088C19;
+}
+
+.planos li:hover h2{
+    font-size: 34px;
+
+}
+
+.planos h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.planos-descricao {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.beneficios{
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fffffd;
+
+}
+
+.planos-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.gratis {
+    text-align: center;
+    font-size: 80px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
