@@ -1,7 +1,3 @@
-let loginError = document.querySelector('#mensError')
-loginError.setAttribute ('style', 'display: none')
-loginError.innerHTML = ''
-
 $("#submitButton").click(function(event){
     event.preventDefault();
 
@@ -9,7 +5,7 @@ $("#submitButton").click(function(event){
     let userValid = {
         nome: '', 
         data: '',
-        email: '',
+        email: 'naovai',
         senha: '',
         cep: ''    
     }
@@ -25,7 +21,7 @@ $("#submitButton").click(function(event){
                 senha: item.senhaCad,
                 cep: item.cepCad
             }
-        }
+        }    
     });
 
     if($('#email').val() == userValid.email && $('#senha').val()== userValid.senha){
@@ -41,6 +37,11 @@ $("#submitButton").click(function(event){
     }
     
     
+})
+
+$('#submitesqueci').click(function (event) {
+    event.preventDefault();
+    window.location.href = './recuperacaoDeSenha.html'
 })
 
 $( "#eyeum" ).click(function() {
