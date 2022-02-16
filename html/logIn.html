@@ -30,22 +30,36 @@
             </div>
         </nav>
     </header>
-    <div id="form">
-        <form action="">
-            <label for="email">E-mail</label><br>
-            <input type="text" id="email"><br>
+    <form action="">
+        <div id="form">
 
-            <label for="senha">Senha</label><br>
-            <input type="text" id="senha"><br>
+            <div id="mensError"></div>
+            <div id="mensCerto"></div>
+
+            <label for="email">E-mail</label><br>
+            <input type="text" id="email" placeholder="digite seu email"><br>
+
             <p></p>
+
+            <label>Senha</label><br>
+            <div class="eyeError"><br>
+                <input name="senha" type="password" class="password" id="senha" value=""  minlength="8" maxlength="8" size="20" placeholder="digite sua senha" required>
+                <span class="lnr lnr-eye" id="eyeum"></span>
+            </div>  
+
+            <p></p>
+            
             <input name="submit" type="button" id="submitButton" value="Login">
-        </form>
-    </div>
+
+        </div>
+    </form>
     <footer class="bg-dark text-light">
         <div class="text-center" style="background-color: #333; padding: 20px;" >
           &copy 2022 Copyright: Uncomplicated Code - Criado para fins educativos
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./../javascript/login.js"></script>
 </body>
 </html>
